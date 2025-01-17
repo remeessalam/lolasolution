@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Contact from "../../components/landingPages/Contact";
-import aboutUsImg from "../../assets/images/landing-aboutus.png";
+import aboutUsImg from "../../assets/images/landing-aboutus.jpg";
 import WhyChooseUs from "../../components/common/WhyChooseUs";
 import ReactPlayer from "react-player";
 import { companyDetails, homeBannerVideo } from "../../constant";
@@ -49,7 +49,7 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="py-[5rem] bg-black text-white wrapper">
+      <section className="py-[5rem] bg-white text-white wrapper">
         <div
           data-aos="fade-right"
           className="gradient-rounded-text-box mx-auto lg:mx-0"
@@ -59,10 +59,10 @@ const Home = () => {
         <div className="flex flex-col-reverse items-center lg:grid grid-cols-2 gap-10 mt-7">
           <div data-aos="fade-right" className="flex h-full flex-col gap-7">
             <div className="flex flex-col gap-7 text-center lg:text-start">
-              <h2 className="heading-2">
+              <h2 className="heading-2 text-primary">
                 Enhancing Operations with Advanced Technology.
               </h2>
-              <p className="desc">
+              <p className="desc text-black">
                 At {companyDetails.name}, we’re driven by the belief that
                 technology can solve some of the most complex challenges
                 businesses face today. Founded with a passion for innovation, we
@@ -93,7 +93,7 @@ const Home = () => {
         </div>
       </section>
       <OurServices length={3} />
-      <section className="py-[5rem] bg-black text-white">
+      <section className="py-[5rem]  text-black">
         <div
           data-aos="fade-up"
           className="wrapper text-center flex flex-col gap-3"
@@ -101,7 +101,7 @@ const Home = () => {
           <div className="gradient-rounded-text-box mx-auto mb-4">
             Who We Are
           </div>
-          <h1 className="heading-2 bg-gradient-to-r from-[#7186FF] max-w-[50rem] mx-auto to-[#A502A8] bg-clip-text text-transparent">
+          <h1 className="heading-2  max-w-[50rem] mx-auto  bg-clip-text text-primary">
             Reliable IT Support for Your Business
           </h1>
           <p className="desc max-w-[50rem] mx-auto">

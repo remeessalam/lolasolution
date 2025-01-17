@@ -76,7 +76,7 @@ const Testimonials = () => {
           Testimonials
         </div>
         <h2
-          className="heading-2 text-white mb-2 text-center"
+          className="heading-2 text-primary mb-2 text-center"
           data-aos="fade-up"
         >
           Our Clients' Experiences
@@ -85,7 +85,7 @@ const Testimonials = () => {
           {reviews.map((item) => (
             <div
               key={item.id}
-              className="keen-slider__slide min-h-[18rem] justify-between text-white p-7 bg-[#101010] rounded-xl flex flex-col gap-4"
+              className="keen-slider__slide min-h-[18rem] justify-between text-white p-7 bg-primary rounded-xl flex flex-col gap-4"
             >
               <p className="italic desc">{item.content}</p>
               <div className="flex flex-col gap-2">

@@ -60,16 +60,19 @@ const WhyChooseUs = () => {
   }, [inView]);
 
   return (
-    <section className="py-[5rem] bg-gradient-to-r from-secondary/30 to-primary/30">
+    <section className="py-[5rem] bg-gradient-to-r from-black/10 to-primary/10 text-black">
       <div className="wrapper text-center text-white flex flex-col gap-7">
         <div data-aos="fade-up" className="gradient-rounded-text-box mx-auto">
           Why Choose Us
         </div>
         <div className="flex flex-col gap-5">
-          <h2 data-aos="fade-up" className="heading-2">
+          <h2 data-aos="fade-up" className="heading-2 text-primary">
             Driving Success Through Technology and Innovation
           </h2>
-          <p data-aos="fade-up" className="desc max-w-[40rem] mx-auto">
+          <p
+            data-aos="fade-up"
+            className="desc max-w-[40rem] mx-auto text-black"
+          >
             At {companyDetails.name}, we are dedicated to helping businesses
             harness the power of technology to achieve long-term success. With
             our expertise in web development, mobile apps, AI, cybersecurity,
@@ -87,7 +90,7 @@ const WhyChooseUs = () => {
             <div className="flex flex-col gap-5 h-full">
               <div
                 data-aos="fade-right"
-                className="p-5 border border-primary rounded-xl w-full h-full"
+                className="p-5 border border-white bg-primary rounded-xl w-full h-full"
               >
                 <div className="flex w-full text-start items-center justify-between gap-3">
                   <h5 className="text-xl">Tailored Solutions</h5>
@@ -97,14 +100,14 @@ const WhyChooseUs = () => {
                     alt=""
                   />
                 </div>
-                <p className="desc text-white/80 text-start mt-3">
+                <p className="desc text-white text-start mt-3">
                   We understand that every business is unique, and we create
                   custom solutions that align with your goals and challenges.
                 </p>
               </div>
               <div
                 data-aos="fade-right"
-                className="p-5 border border-primary rounded-xl w-full h-full"
+                className="p-5 border border-white bg-primary  rounded-xl w-full h-full"
               >
                 <div className="flex w-full text-start items-center justify-between gap-3">
                   <h5 className="text-xl">Experienced Team</h5>
@@ -130,7 +133,7 @@ const WhyChooseUs = () => {
             <div className="flex flex-col gap-5 h-full">
               <div
                 data-aos="fade-left"
-                className="p-5 border border-primary rounded-xl w-full h-full"
+                className="p-5 border border-white bg-primary  rounded-xl w-full h-full"
               >
                 <div className="flex w-full text-start items-center justify-between gap-3">
                   <h5 className="text-xl">End-to-End Service</h5>
@@ -148,7 +151,7 @@ const WhyChooseUs = () => {
               </div>
               <div
                 data-aos="fade-left"
-                className="p-5 border border-primary rounded-xl w-full h-full"
+                className="p-5 border border-white bg-primary  rounded-xl w-full h-full"
               >
                 <div className="flex w-full text-start items-center justify-between gap-3">
                   <h5 className="text-xl">Results-Driven</h5>
@@ -170,7 +173,7 @@ const WhyChooseUs = () => {
           <div
             ref={ref}
             data-aos="fade-up"
-            className="w-full grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10 lg:gap-5 rounded-3xl bg-gradient-to-r from-secondary to-primary p-[2rem]"
+            className="w-full grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10 lg:gap-5 rounded-3xl bg-gradient-to-r from-black/30 to-primary p-[2rem]"
           >
             <div className="w-full flex flex-col items-center justify-center">
               <div className="flex flex-col gap-3 relative w-fit">

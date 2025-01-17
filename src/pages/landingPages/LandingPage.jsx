@@ -27,13 +27,21 @@ export const LandingPage = ({ page }) => {
   const isWebDevelopment = Boolean(page === "web-development");
   return (
     <>
-      <div id="banner" className="h-screen relative">
-        <img
+      <div
+        id="banner"
+        className="h-screen relative bg-current bg-no-repeat bg-right bg-cover"
+        style={{
+          backgroundImage: `url(${
+            isWebDevelopment ? webDevBanner : appDevBanner
+          })`,
+        }}
+      >
+        {/* <img
           src={isWebDevelopment ? webDevBanner : appDevBanner}
           className="w-full h-full object-cover object-right absolute"
           alt=""
-        />
-        <div className="bg-gradient-to-r from-white/20 to-secondary/80 absolute w-full h-full"></div>
+        /> */}
+        <div className="bg-gradient-to-r from-white/20 to-primary/30 absolute w-full h-full"></div>
         <div
           data-aos="fade-up"
           className="pt-[3rem] wrapper flex items-center h-full"
@@ -47,7 +55,7 @@ export const LandingPage = ({ page }) => {
                 ? "Creating Websites that Grow with Your Business"
                 : "Your Ideas, Perfectly Engineered into Apps"}
             </h1>
-            <p className="text-white/90 desc">
+            <p className="text-white desc">
               We specialize in delivering cutting-edge IT solutions tailored to
               meet the unique needs of modern businesses.
             </p>
@@ -65,7 +73,7 @@ export const LandingPage = ({ page }) => {
 
       <ContactForm />
 
-      <section id="about" className="pb-[5rem] bg-black text-white wrapper">
+      <section id="about" className="pb-[5rem]  text-black wrapper">
         <div
           data-aos="fade-up"
           className="gradient-rounded-text-box mx-auto lg:mx-0"
@@ -78,7 +86,7 @@ export const LandingPage = ({ page }) => {
             className="flex h-full flex-col gap-7 text-center lg:text-start"
           >
             <div className="flex flex-col gap-7">
-              <h2 className="heading-2">
+              <h2 className="heading-2 text-primary">
                 {isWebDevelopment
                   ? "Innovative Web Development Solutions for Modern Brands"
                   : "Building Apps that Elevate Your Business with Our App Development Services."}
@@ -122,7 +130,7 @@ export const LandingPage = ({ page }) => {
       <Portfolio page={page} />
       <WhyChooseUs />
 
-      <section className="py-[5rem] bg-black text-white">
+      <section className="py-[5rem]  text-black">
         <div className="wrapper text-center flex flex-col gap-3">
           <div
             data-aos="fade-up"
@@ -132,7 +140,7 @@ export const LandingPage = ({ page }) => {
           </div>
           <h1
             data-aos="fade-up"
-            className="heading-1 bg-gradient-to-r from-[#7186FF_40%] md:min-h-[5rem] to-[#A502A8_50%] bg-clip-text text-transparent"
+            className="heading-1  md:min-h-[5rem]  bg-clip-text text-primary"
           >
             Design & Revolution
           </h1>
@@ -202,7 +210,7 @@ export const LandingPage = ({ page }) => {
               data-aos="fade-left"
               className="flex z-10 flex-col gap-5 justify-center ml-10 text-white"
             >
-              <h2 className="text-5xl md:text-6xl lg:text-8xl font-bold font-raleway">
+              <h2 className="text-5xl md:text-6xl lg:text-8xl font-bold font-raleway text-primary">
                 Design
               </h2>
               <div className="flex items-center gap-2">
@@ -211,11 +219,11 @@ export const LandingPage = ({ page }) => {
                   className="sm:flex hidden h-[3rem] lg:h-[5rem] object-contain"
                   alt=""
                 />
-                <h2 className="text-5xl md:text-6xl lg:text-8xl font-bold font-raleway">
+                <h2 className="text-5xl md:text-6xl lg:text-8xl font-bold font-raleway ">
                   & Recreate
                 </h2>
               </div>
-              <p className="desc text-white/70">
+              <p className="desc text-black">
                 Leverage your existing marketing platforms and sync the data
                 seamlessly
               </p>

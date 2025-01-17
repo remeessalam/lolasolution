@@ -1,16 +1,11 @@
 import React from "react";
-import {
-  BsFacebook,
-  BsInstagram,
-  BsLinkedin,
-  BsTwitter,
-} from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { companyDetails, logoImg, routes } from "../../constant";
 import { Link } from "react-router-dom";
 
 const WebsiteFooter = () => {
   return (
-    <div className="py-14 bg-gradient-to-r from-primary/30 to-secondary/30">
+    <div className="py-14 bg-primary/80">
       <div className="wrapper text-white">
         <div className="flex md:flex-row flex-col justify-between gap-10">
           <div className="flex flex-col items-center">
@@ -27,7 +22,7 @@ const WebsiteFooter = () => {
                 <Link
                   key={path}
                   to={path}
-                  className="text-white/70 desc text-sm hover:text-primary transition-all duration-300"
+                  className="text-white desc text-sm hover:text-primary transition-all duration-300"
                 >
                   {name}
                 </Link>
@@ -39,14 +34,14 @@ const WebsiteFooter = () => {
                 <h6 className="text-[.9rem] mb-1">Phone</h6>
                 <Link
                   to={`tel:${companyDetails.phone}`}
-                  className="text-white/70 desc text-sm"
+                  className="text-white desc text-sm"
                 >
                   {companyDetails.phone}
                 </Link>
               </div>
               <div className="flex flex-col mt-2">
                 <h6 className="text-[.9rem] mb-1">Office Address</h6>
-                <p className="text-white/70 desc text-sm max-w-[15rem]">
+                <p className="text-white desc text-sm max-w-[15rem]">
                   {companyDetails.address}
                 </p>
               </div>

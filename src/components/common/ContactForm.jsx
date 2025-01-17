@@ -69,11 +69,11 @@ const ContactForm = () => {
     <div className="wrapper py-[5rem] grid lg:grid-cols-[45%_auto] gap-7">
       <div
         data-aos="fade-right"
-        className="bg-gradient-to-r flex flex-col gap-2 text-white from-secondary/30 to-primary/30 p-4 rounded-xl"
+        className="bg-primary/50 flex flex-col gap-2 text-white  p-4 rounded-xl"
       >
         <div className="gradient-rounded-text-box">Book an Appointment</div>
-        <h2 className="heading-2 mt-5">Get in Touch</h2>
-        <p className="desc">
+        <h2 className="heading-2 mt-5 text-primary">Get in Touch</h2>
+        <p className="desc text-black">
           Let {companyDetails.name} be the catalyst for your digital
           transformation. Together, we can build solutions that are as dynamic
           as your vision, helping your business reach new heights.
@@ -86,20 +86,20 @@ const ContactForm = () => {
             <FaPhone className="text-2xl scale-x-[-1]" />
           </div>
           <div className="flex flex-col h-full">
-            <p className="font-medium">Call Us</p>
-            <p className="desc">{companyDetails.phone}</p>
+            <p className="font-medium text-black">Call Us</p>
+            <p className="desc text-black">{companyDetails.phone}</p>
           </div>
         </Link>
         <Link
           to={`mailto:${companyDetails.email}`}
-          className="flex items-start gap-3 w-fit mt-5"
+          className="flex items-start gap-3 w-fit mt-5 "
         >
           <div className="w-[2.5rem] h-[2.5rem] rounded-full bg-primary flex justify-center items-center">
             <IoMail className="text-3xl scale-x-[-1]" />
           </div>
           <div className="flex flex-col h-full">
-            <p className="font-medium">Email</p>
-            <p className="desc">{companyDetails.email}</p>
+            <p className="font-medium text-black">Email</p>
+            <p className="desc text-black">{companyDetails.email}</p>
           </div>
         </Link>
         <div className="flex items-start gap-3 w-fit mt-5">
@@ -107,8 +107,10 @@ const ContactForm = () => {
             <FaLocationDot className="text-2xl scale-x-[-1]" />
           </div>
           <div className="flex flex-col h-full">
-            <p className="font-medium">Location</p>
-            <p className="desc max-w-[20rem]">{companyDetails.address}</p>
+            <p className="font-medium text-black">Location</p>
+            <p className="desc max-w-[20rem] text-black">
+              {companyDetails.address}
+            </p>
           </div>
         </div>
       </div>
@@ -116,8 +118,8 @@ const ContactForm = () => {
         data-aos="fade-left"
         className="h-full flex flex-col justify-between gap-7"
       >
-        <div className="p-[1px] text-white h-full bg-gradient-to-r from-secondary to-primary rounded-lg">
-          <div className="rounded-lg h-full bg-[#101010] p-4">
+        <div className="p-[1px] text-white h-full  rounded-lg">
+          <div className="rounded-lg h-full bg-black/80 p-4">
             <h3 className="text-lg">Have Any Question?</h3>
             <form
               onSubmit={handleSubmit(handleFormSubmit)}
@@ -207,7 +209,7 @@ const ContactForm = () => {
             </form>
           </div>
         </div>
-        <div className="flex gap-5 items-center text-white mb-1">
+        <div className="flex gap-5 items-center text-black mb-1">
           <p>Follow Us On:</p>
           <div className="flex items-center gap-3">
             <Link
@@ -216,7 +218,7 @@ const ContactForm = () => {
               target="_blank"
               className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
             >
-              <BsFacebook className="text-xl text-white group-hover:text-primary transition-all duration-300" />
+              <BsFacebook className="text-xl text-black group-hover:text-primary transition-all duration-300" />
             </Link>
             <Link
               to={companyDetails.twitter}
@@ -224,7 +226,7 @@ const ContactForm = () => {
               target="_blank"
               className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
             >
-              <BsTwitter className="text-xl text-white group-hover:text-primary transition-all duration-300" />
+              <BsTwitter className="text-xl text-black group-hover:text-primary transition-all duration-300" />
             </Link>
             <Link
               to={companyDetails.linkedin}
@@ -232,7 +234,7 @@ const ContactForm = () => {
               target="_blank"
               className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
             >
-              <BsLinkedin className="text-xl text-white group-hover:text-primary transition-all duration-300" />
+              <BsLinkedin className="text-xl text-black group-hover:text-primary transition-all duration-300" />
             </Link>
             <Link
               to={companyDetails.instagram}
@@ -240,7 +242,7 @@ const ContactForm = () => {
               target="_blank"
               className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
             >
-              <BsInstagram className="text-xl text-white group-hover:text-primary transition-all duration-300" />
+              <BsInstagram className="text-xl text-black group-hover:text-primary transition-all duration-300" />
             </Link>
           </div>
         </div>

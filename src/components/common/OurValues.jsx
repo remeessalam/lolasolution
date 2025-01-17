@@ -8,7 +8,7 @@ const CoreValuesSection = () => {
     <div className="py-12 px-6 sm:px-12 lg:px-24">
       {/* Core Values Section */}
       <div className="mb-12">
-        <h2 className="text-3xl font-bold text-center text-white mb-8">
+        <h2 className="text-3xl font-bold text-center text-primary mb-8">
           Our Core Values
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -29,7 +29,7 @@ const CoreValuesSection = () => {
 
       {/* Why Work With Us Section */}
       <div>
-        <h2 className="text-3xl font-bold text-center text-white mb-8">
+        <h2 className="text-3xl font-bold text-center text-primary mb-8">
           Why Work With Us?
         </h2>
         <div className="grid gap-8 md:grid-cols-2">
@@ -37,10 +37,10 @@ const CoreValuesSection = () => {
             <div key={reason.id} className="flex items-start gap-4">
               {reason.icon}
               <div>
-                <h3 className="text-xl font-semibold text-white">
+                <h3 className="text-xl font-semibold text-black">
                   {reason.title}
                 </h3>
-                <p className="text-white">{reason.description}</p>
+                <p className="text-black">{reason.description}</p>
               </div>
             </div>
           ))}

@@ -9,22 +9,20 @@ import gsap from "gsap";
 const EndlessOpportunitiesSection = () => {
   useEffect(() => {
     const tl = gsap.timeline();
-    tl
-      .to("#from-right", {
-        x: -300,
-        yoyo: true,
-        repeat: -1,
-        duration: 1,
-        ease: "back.inOut",
-      })
-      .to("#from-left", {
-        x: 300,
-        yoyo: true,
-        repeat: -1,
-        duration: 1,
-        ease: "back.inOut",
-        delay: 1,
-      });
+    tl.to("#from-right", {
+      x: -300,
+      yoyo: true,
+      repeat: -1,
+      duration: 1,
+      ease: "back.inOut",
+    }).to("#from-left", {
+      x: 300,
+      yoyo: true,
+      repeat: -1,
+      duration: 1,
+      ease: "back.inOut",
+      delay: 1,
+    });
 
     return () => {
       tl.kill();
@@ -36,17 +34,17 @@ const EndlessOpportunitiesSection = () => {
         <div data-aos="fade-up">
           <div className="flex justify-center flex-col">
             <div data-aos="fade-up" className="flex md:-translate-x-[30%]">
-              <h2 className="text-[1rem] sm:text-3xl text-end font-raleway">
+              <h2 className="text-[1rem] sm:text-3xl text-end font-raleway text-black">
                 One <br />
                 Platform
               </h2>
-              <h2 className="text-5xl sm:text-7xl font-raleway font-medium md:mt-1">
+              <h2 className="text-5xl sm:text-7xl font-raleway font-medium md:mt-1 text-primary">
                 Endless
               </h2>
             </div>
             <h2
               data-aos="fade-up"
-              className="text-5xl sm:text-7xl md:translate-x-[30%] font-raleway font-medium"
+              className="text-5xl sm:text-7xl md:translate-x-[30%] font-raleway font-medium text-black"
             >
               Opportunities
             </h2>

@@ -17,15 +17,15 @@ const Services = () => {
       <OurServices />
       <UnlockEfficiency />
       <Testimonials />
-      <section className="bg-black text-white py-16 px-6">
+      <section className=" text-black py-16 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-semibold mb-8">
+          <h2 className="text-3xl sm:text-4xl font-semibold mb-8 text-primary">
             Why Partner With Us?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="flex flex-col items-center">
-              <div className="bg-gray-800 p-6 rounded-full mb-4">
-                <FaCogs className="h-12 w-12 text-blue-500" />
+              <div className="bg-primary p-6 rounded-full mb-4">
+                <FaCogs className="h-12 w-12 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-2">
                 Customized Solutions
@@ -37,8 +37,8 @@ const Services = () => {
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="bg-gray-800 p-6 rounded-full mb-4">
-                <FaUserShield className="h-12 w-12 text-blue-500" />
+              <div className="bg-primary p-6 rounded-full mb-4">
+                <FaUserShield className="h-12 w-12 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Experienced Team</h3>
               <p className="text-lg">
@@ -49,8 +49,8 @@ const Services = () => {
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="bg-gray-800 p-6 rounded-full mb-4">
-                <FaProjectDiagram className="h-12 w-12 text-blue-500" />
+              <div className="bg-primary p-6 rounded-full mb-4">
+                <FaProjectDiagram className="h-12 w-12 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-2">End-to-End Service</h3>
               <p className="text-lg">
@@ -61,8 +61,8 @@ const Services = () => {
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="bg-gray-800 p-6 rounded-full mb-4">
-                <FaChartLine className="h-12 w-12 text-blue-500" />
+              <div className="bg-primary p-6 rounded-full mb-4">
+                <FaChartLine className="h-12 w-12 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Focused on Results</h3>
               <p className="text-lg">

@@ -15,7 +15,7 @@ const OurServices = ({ length }) => {
     setIsOpen(true);
   };
   return (
-    <div className="py-[5rem] bg-[#101010] text-white">
+    <div className="py-[5rem]  text-white">
       <div
         data-aos="fade-up"
         className="wrapper flex flex-col text-center gap-5 items-center"
@@ -23,10 +23,10 @@ const OurServices = ({ length }) => {
         <div data-aos="fade-up" className="gradient-rounded-text-box mb-2">
           Our Services
         </div>
-        <h2 data-aos="fade-up" className="heading-2 max-w-[50rem]">
+        <h2 data-aos="fade-up" className="heading-2 max-w-[50rem] text-primary">
           Advanced and Highly Reliable Performance
         </h2>
-        <p data-aos="fade-up" className="desc max-w-[50rem]">
+        <p data-aos="fade-up" className="desc max-w-[50rem] text-black">
           Our success is our success and together we help our society to become
           a better place to live and work.
         </p>
@@ -36,21 +36,23 @@ const OurServices = ({ length }) => {
               onClick={() => handleSelectServiceToShowDetail(service)}
               data-aos="fade-up"
               key={service.id}
-              className="rounded-lg group p-[1px] bg-gradient-to-r from-secondary to-primary cursor-pointer"
+              className="rounded-lg group p-[1px] bg-gradient-to-r shadow-xl from-black/10 to-primary/10 cursor-pointer"
             >
-              <div className="rounded-lg bg-[#101010] hover:bg-black/70 transition-all duration-300 p-5 flex flex-col justify-between items-start text-start h-full gap-4">
+              <div className="rounded-lg bg-white hover:bg-black/70 transition-all duration-300 p-5 flex flex-col justify-between items-start text-start h-full gap-4">
                 <div className="w-[5rem] group-hover:scale-105 transition-all duration-200 h-[5rem] bg-primary rounded-full text-white flex justify-center items-center">
                   {service.icon}
                 </div>
                 <div className="flex flex-col gap-3">
-                  <h5 className="font-semibold text-xl font-raleway">
+                  <h5 className="font-semibold text-xl font-raleway text-primary">
                     {service.title}
                   </h5>
-                  <p className="desc text-white/80">{service.desc}</p>
+                  <p className="desc text-black/80 group-hover:text-white">
+                    {service.desc}
+                  </p>
                 </div>
                 <button
                   onClick={() => handleSelectServiceToShowDetail(service)}
-                  className="desc mt-1 flex items-center gap-3 hover:text-primary transition-all duration-300"
+                  className="desc mt-1 flex items-center gap-3 text-black group-hover:text-primary transition-all duration-300"
                 >
                   Learn More <PiCaretDoubleRightBold />
                 </button>
