@@ -9,6 +9,7 @@ import {
   FaProjectDiagram,
   FaChartLine,
 } from "react-icons/fa";
+import { companyDetails } from "../../constant";
 
 const Services = () => {
   return (
@@ -74,12 +75,11 @@ const Services = () => {
           </div>
           <div className="mt-12">
             <p className="text-lg mb-4">
-              At {`{companyDetails.name}`}, we are committed to helping
-              businesses like yours navigate the digital landscape and achieve
-              success. Whether you need a new website, a mobile app, or
-              cutting-edge technology like AI or blockchain, our team is here to
-              bring your vision to life and support your growth every step of
-              the way.
+              At {companyDetails.name}, we are committed to helping businesses
+              like yours navigate the digital landscape and achieve success.
+              Whether you need a new website, a mobile app, or cutting-edge
+              technology like AI or blockchain, our team is here to bring your
+              vision to life and support your growth every step of the way.
             </p>
             <p className="text-xl font-semibold">
               Let’s Build Something Great Together.

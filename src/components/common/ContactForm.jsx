@@ -69,7 +69,7 @@ const ContactForm = () => {
     <div className="wrapper py-[5rem] grid lg:grid-cols-[45%_auto] gap-7">
       <div
         data-aos="fade-right"
-        className="bg-primary/50 flex flex-col gap-2 text-white  p-4 rounded-xl"
+        className="bg-primary/30 flex flex-col gap-2 text-white  p-4 rounded-xl"
       >
         <div className="gradient-rounded-text-box">Book an Appointment</div>
         <h2 className="heading-2 mt-5 text-primary">Get in Touch</h2>

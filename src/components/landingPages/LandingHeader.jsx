@@ -82,7 +82,7 @@ const LandingHeader = () => {
               <Link
                 onClick={() => setIsOpen(false)}
                 key={id}
-                className="text-3xl text-white font-medium transition-colors duration-300 link"
+                className="text-3xl !text-white font-medium transition-colors duration-300 link"
                 to={path}
                 spy={true}
                 smooth={true}
@@ -99,7 +99,7 @@ const LandingHeader = () => {
           onClick={toggleDrawer}
         >
           <Hamburger
-            color="white"
+            color="black"
             size="23"
             toggled={isOpen}
             rounded

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const LandingFooter = () => {
   return (
-    <div className="py-14 bg-primary/80">
+    <div className="py-14 bg-primary">
       <div className="wrapper text-white">
         <div className="flex md:flex-row flex-col justify-between gap-10">
           <div className="flex flex-col items-center">
