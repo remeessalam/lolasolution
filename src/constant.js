@@ -73,7 +73,7 @@ export const companyDetails = {
   name: "LOLA SOLUTION",
   phone: "+91-9326176427",
   whatsapp: "+91-9326176427",
-  email: "support@example.com",
+  email: "infor@lolasolutjon.com",
   address: "your company address",
   twitter: "https://x.com/lolasolution_in?s=11&t=tLp3BvgseVl9ZAiqZFnjgg",
   linkedin: "",
