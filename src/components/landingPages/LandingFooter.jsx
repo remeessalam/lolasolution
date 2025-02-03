@@ -81,28 +81,28 @@ const LandingFooter = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <BsFacebook className="text-xl text-white/90 hover:text-primary transition-all duration-300" />
+                <BsFacebook className="text-xl text-white/90 hover:text-black transition-all duration-300" />
               </Link>
               <Link
                 to={companyDetails.twitter}
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <BsTwitter className="text-xl text-white/90 hover:text-primary transition-all duration-300" />
+                <BsTwitter className="text-xl text-white/90 hover:text-black transition-all duration-300" />
               </Link>
               <Link
                 to={companyDetails.linkedin}
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <BsLinkedin className="text-xl text-white/90 hover:text-primary transition-all duration-300" />
+                <BsLinkedin className="text-xl text-white/90 hover:text-black transition-all duration-300" />
               </Link>
               <Link
                 to={companyDetails.instagram}
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <BsInstagram className="text-xl text-white/90 hover:text-primary transition-all duration-300" />
+                <BsInstagram className="text-xl text-white/90 hover:text-black transition-all duration-300" />
               </Link>
             </div>
           </div>

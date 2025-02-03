@@ -75,9 +75,10 @@ export const companyDetails = {
   whatsapp: "+91-9326176427",
   email: "support@example.com",
   address: "your company address",
-  twitter: "",
+  twitter: "https://x.com/lolasolution_in?s=11&t=tLp3BvgseVl9ZAiqZFnjgg",
   linkedin: "",
-  instagram: "",
+  instagram:
+    "https://www.instagram.com/lola_solution?igsh=MTcwcG1vcWI5ZW1iNA==",
   facebook: "",
 };
 
