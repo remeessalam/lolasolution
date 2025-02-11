@@ -76,7 +76,7 @@ export const companyDetails = {
   email: "infor@lolasolutjon.com",
   address: "d706 Ganga estate chembur mumbai 400071",
   twitter: "https://x.com/lolasolution_in?s=11&t=tLp3BvgseVl9ZAiqZFnjgg",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/company/lola-solution/",
   instagram:
     "https://www.instagram.com/lola_solution?igsh=MTcwcG1vcWI5ZW1iNA==",
   facebook: "",
