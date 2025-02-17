@@ -73,7 +73,7 @@ export const companyDetails = {
   name: "LOLA SOLUTION",
   phone: "+91-9326176427",
   whatsapp: "+91-9326176427",
-  email: "infor@lolasolutjon.com",
+  email: " info@lolasolution.com",
   address: "d706 Ganga estate chembur mumbai 400071",
   twitter: "https://x.com/lolasolution_in?s=11&t=tLp3BvgseVl9ZAiqZFnjgg",
   linkedin: "https://www.linkedin.com/company/lola-solution/",
