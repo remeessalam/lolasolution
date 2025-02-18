@@ -69,7 +69,7 @@ const LandingFooter = () => {
                 <p className="text-white0 desc text-sm max-w-[15rem]">
                   India - {companyDetails.address}
                 </p>
-                <p className="text-white0 desc text-sm max-w-[15rem]">
+                <p className="text-white0 desc text-sm max-w-[15rem] mt-3">
                   Dubai - {companyDetails.address2}
                 </p>
               </div>
