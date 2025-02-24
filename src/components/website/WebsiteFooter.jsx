@@ -85,6 +85,26 @@ const WebsiteFooter = () => {
             </div>
           </div>
         </div>
+        <div className="text-center py-6 bg-gray-900 mt-10 rounded-lg">
+          <p className="text-sm text-gray-100">
+            &copy; 2025 LOLA SOLUTION. All rights reserved.
+          </p>
+          <div className="mt-2">
+            <Link
+              to="/termsandconditions"
+              className="text-primary hover:underline mx-2"
+            >
+              Terms and Conditions
+            </Link>
+            &
+            <Link
+              to="/privacypolicy"
+              className="text-primary hover:underline mx-2"
+            >
+              Privacy Policy
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );

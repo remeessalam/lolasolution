@@ -14,7 +14,12 @@ import SpinnerContextProvider, {
 } from "./components/SpinnerContext";
 import { Toaster } from "react-hot-toast";
 import ScrollToTop from "./components/common/ScrollToTop";
+
 const Thankyou = lazy(() => import("./pages/Thankyou"));
+const TermsAndConditions = lazy(() =>
+  import("./pages/website/TermsAndConditions")
+);
+const PrivacyPolicy = lazy(() => import("./pages/website/PrivacyPolicy"));
 
 AOS.init({
   once: true,
@@ -43,6 +48,8 @@ export default function App() {
           ))}
 
           <Route path="/thankyou" element={<Thankyou />} />
+          <Route path="/termsandconditions" element={<TermsAndConditions />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
 
           {/* Landing Pages */}
           <Route
